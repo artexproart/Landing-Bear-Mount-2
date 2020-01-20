@@ -1,0 +1,59 @@
+.about-wrap
+    padding-top: 50px
+    padding-bottom: 150px
+.about-card
+    width: 214px
+    height: 243px
+    text-align: center
+    box-shadow: 4px 6px 10px rgba(193, 228, 249, 0.58)
+    border-radius: 20px
+    border: 1px solid #a5a19b2f
+    background-color: #ffffff
+    align-items: center
+    position: relative
+    padding-top: 40px
+    margin: 22px 10px
+    outline: none
+    &:hover
+        box-shadow: 0 10px 38px rgba(62, 126, 241, 0.14)
+        border: 1px solid rgba(0, 0, 0, 0.02)
+    &::before
+        content: ''
+        position: absolute
+        bottom: -20px
+        left: 50%
+        transform: translateX(-50%)
+        width: 40px
+        height: 40px
+        border-radius: 50%
+            // background: url(../img/services/step.png)
+        background-color: #3e7ef1
+        opacity: 0
+        z-index: 100
+    &::after 
+        content: '\003E'
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        bottom: -10px
+        color: #ffffff
+        opacity: 0
+        z-index: 100
+    &:hover
+        &:before, &:after 
+            opacity: 1
+    &__icon 
+        max-width: 100px
+        max-height: 80px
+        margin: auto
+    &__text
+        +medium
+        font-size: 18px
+        margin-top: 50px
+
+@media (max-width: 320px)
+    .about-wrap
+        padding-top: 1px
+        padding-bottom: 5px
+        // padding: 1px 0px
+        

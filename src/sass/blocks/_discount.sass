@@ -1,0 +1,63 @@
+.discount
+    &-wrap
+        display: flex 
+        background-color: #ffffff
+        padding-top: 50px
+    &-block
+        &__left
+            margin: auto
+            text-align: center
+            background-color: #ffffff
+    &-brand
+        &__text
+            font-size: 24px
+            margin: 15px 0
+        &__offer
+            font-size: 48px
+            color: #ff0000
+            text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25)
+            margin: 0
+        &__clik
+            padding: 30px 0
+        &__counter__min
+            display: none
+
+@media (max-width: 1200px)
+    .discount
+        &-block
+            &__right
+                max-width: 600px
+            &__img
+                width: 100%
+@media (max-width: 768px)
+    .discount
+        &-wrap
+            flex-direction: column-reverse
+        &-block__right
+            padding-bottom: 30px
+        // display: none
+
+@media (max-width: 450px)
+    .discount-brand__wrapper
+        width: 240px
+        margin: auto
+    .discount-brand__logo
+        width: 100%
+        height: 100%
+                // display: none
+    .discount-brand__counter
+        // min-width: 280p
+        display: none
+    .discount-brand__counter__min
+        display: block
+        margin-top: 40px
+
+    .discount-brand__offer
+        font-size: 36px
+    //     width: 300px
+    //     height: 300px
+    .discount-drand__logo
+        width: 100%
+        height: 100%
+    .discount-button
+        margin-top: 10px

@@ -1,0 +1,171 @@
+.offer
+    &::before
+        content: url(../img/offer/offer-girl.png)        
+        position: absolute
+        left: 50%
+        transform: translateX(-50%)
+        margin-top: -15px
+        max-width: 404px
+        max-height: 436px
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &-sale
+        z-index: 1
+        &__title
+            +medium
+            font-size: 36px
+            margin: 15px 0
+        &__subtitle
+            font-size: 36px
+        &__text
+            +medium
+            font-size: 72px
+            color: #ffffff
+            margin-top: 70px
+            margin-bottom: 0px
+        &__description
+            font-size: 36px
+            letter-spacing: -1.8px
+            color: #ffffff
+            margin: 15px 0
+        &__counter
+            padding-top: 120px
+            width: 380px
+            height: 100px
+            &__min
+                display: none
+    &-girl
+        z-index: 0
+        position: absolute
+        left: 50% 
+        margin-left: -10%
+        margin-top: -30px
+        max-width: 420px
+        &__image
+            width: 100%
+    &-form
+        z-index: 1
+        text-align: right
+        &__title
+            +medium
+            font-size: 36px
+            text-align: right
+            margin: 15px 0  
+        &__subtitle
+            font-size: 36px
+            text-align: right
+        &__contact
+            padding-top: 50px
+    &__input
+        width: 270px
+        height: 60px
+        border-radius: 73px
+        background-color: #ffffff
+        outline: none
+        border: none
+        outline: none
+        text-align: center
+        font-size: 18px
+        color: #000
+    &-button
+        padding-top: 100px
+        text-align: right
+
+.offer-girl__mini
+    display: none 
+
+@media (max-width: 1200px)
+    .offer
+        &::before
+            display: none
+        &-sale
+            margin-top: -25px
+            &__title
+                margin: 15px 0
+                padding-bottom: 25px
+            &__description
+                margin: 15px 0
+        &-form
+            margin-top: -25px
+            &__title
+                margin: 15px 0 
+                padding-bottom: 25px 
+            &__contact
+                padding-top: 50px
+            &__button
+                margin-top: 50px
+
+@media (max-width: 900px)
+    .offer
+        background-position-y: 840px
+        &-wrap
+            flex-direction: column
+        &-sale
+            text-align: center
+            &__title
+                padding-bottom: 5px
+            &__text, &__description
+                color: #292929e3
+                margin-top: 10px
+            &__counter
+                padding-top: 20px
+                width: 400px
+                margin: auto
+        &-form
+            margin-top: 25px
+            text-align: center
+            &__title
+                text-align: center
+        &-button
+            text-align: center 
+
+    .offer-girl
+        &__mini
+            display: block
+            max-width: 300px
+            max-height: 472px
+            margin: auto
+            padding-top: 20px
+        &__imgs
+            width: 100%
+
+@media (max-width: 480px)
+    .offer
+        background-position-y: 885px
+@media (max-width: 450px)
+    .offer
+        background-position-y: 870px
+        &-sale
+            &__counter 
+                display: none
+                &__min
+                    display: block
+                    margin-top: 40px
+    .menu
+        &-subtitle
+            font-size: 38px
+
+@media (max-width: 410px)
+    .offer
+        background-position-y: 910px
+
+@media (max-width: 370px)
+    .offer
+        background-position-y: 950px
+
+@media (max-width: 320px)
+    .offer
+        background-position-y: 930px
+        &-sale
+            &__text
+                font-size: 66px
+
+
+
+
+
+
+
+            
+
