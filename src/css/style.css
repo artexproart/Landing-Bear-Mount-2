@@ -285,6 +285,17 @@ body {
   background-repeat-x: repeat;
 }
 
+.hero {
+  background-image: url(../img/version2/11.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  background-attachment: fixed;
+  max-width: 1920px;
+  min-height: 800px;
+  margin: auto;
+}
+
 .hero-title {
   text-align: center;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.94);
@@ -355,6 +366,35 @@ body {
     line-height: 37px;
     letter-spacing: 0px;
   }
+}
+
+.events {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 50px 20px;
+}
+
+.events-title {
+  width: 100%;
+  text-align: center;
+}
+
+.events-block {
+  width: 300px;
+  margin: 35px;
+  text-align: center;
+}
+
+.events-block__images {
+  width: 100%;
 }
 
 .menu {
